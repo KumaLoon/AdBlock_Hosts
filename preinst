@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Backing up the original Hosts"
+cd /var/mobile/
+mkdir ADhosts
+cd /etc
+cp hosts /var/mobile/ADhosts
+echo "Finalizing the back up. Downloading the Hosts file."
+exit

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Thank you for using AdBlock Hosts, bye"
+exit 0

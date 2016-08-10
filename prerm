@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "Restoring the original Hosts"
+cd /var/mobile/ADhosts
+rm -rf /etc/hosts
+cp hosts /etc
+rm -rf /var/mobile/ADhosts
+echo "Done"
+exit 0
