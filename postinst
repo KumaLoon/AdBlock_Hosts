@@ -1,6 +1,6 @@
 #!/bin/bash
 
-expecthosts='<MD5>  /etc/hosts' #Replace <MD5> with your own hosts' MD5
+expecthosts="<MD5>  /etc/hosts" #Replace <MD5> with your own hosts' MD5
 actualhosts="$(md5sum /etc/hosts)"
 
 echo "Downloading the Hosts file."
@@ -14,7 +14,7 @@ echo "Moving the Hosts file to /etc"
 rm -rf /etc/hosts
 mv hosts /etc
 echo "Checking md5"
-if [ "$actualhosts" == "$expecthosts" ]; then
+if [ "${actualhosts}" == "$expecthosts" ]; then
     echo "Verfied"
     exit 0
 else
